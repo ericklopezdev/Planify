@@ -17,8 +17,10 @@ import com.app.planify.screens.auth.AuthScreen
 import com.app.planify.screens.auth.OnboardingScreen
 import com.app.planify.screens.auth.OtpScreen
 import com.app.planify.screens.home.HomeScreen
-import com.app.planify.screens.pomodoro.PomodoroScreen
-import com.app.planify.screens.profile.ProfileScreen
+// TODO: uncomment when feat/pomodoro is merged
+// import com.app.planify.screens.pomodoro.PomodoroScreen
+// TODO: uncomment when feat/profile is merged
+// import com.app.planify.screens.profile.ProfileScreen
 import com.app.planify.screens.tasks.TasksScreen
 
 @Composable
@@ -27,7 +29,8 @@ fun AppNavigation() {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
 
-    val bottomBarRoutes = setOf(Routes.HOME, Routes.TASKS, Routes.POMODORO, Routes.PROFILE)
+    // TODO: add Routes.POMODORO and Routes.PROFILE when their features are merged
+    val bottomBarRoutes = setOf(Routes.HOME, Routes.TASKS)
     val showBottomBar = currentRoute in bottomBarRoutes
 
     Scaffold(
@@ -100,13 +103,11 @@ fun AppNavigation() {
                 )
             }
 
-            composable(Routes.POMODORO) {
-                PomodoroScreen()
-            }
+                // TODO: temporary — enable when feat/pomodoro is merged
+            // composable(Routes.POMODORO) { PomodoroScreen() }
 
-            composable(Routes.PROFILE) {
-                ProfileScreen()
-            }
+            // TODO: temporary — enable when feat/profile is merged
+            // composable(Routes.PROFILE) { ProfileScreen() }
         }
     }
 }
