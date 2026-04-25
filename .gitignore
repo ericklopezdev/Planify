@@ -13,12 +13,7 @@ local.properties
 gradle.properties.local
 
 # IntelliJ / Android Studio
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea
 .DS_Store
 
 # Logs
