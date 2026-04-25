@@ -1,7 +1,18 @@
+# Android / Gradle
 *.iml
-.gradle
+.gradle/
 **/.gradle/
-/local.properties
+**/build/
+/captures
+.externalNativeBuild/
+.cxx/
+
+# Local config (never commit secrets)
+local.properties
+**/local.properties
+gradle.properties.local
+
+# IntelliJ / Android Studio
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -9,17 +20,26 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+
+# Logs
 *.log
-/gradle/wrapper/
-/gradlew
-/gradlew.bat
-**/local.properties
+
+# Keystores & signing (keep .gitignore, never commit keys)
 *.keystore
 *.jks
+
+# Build outputs
 app/*.apk
 app/*.aab
+
+# Local databases (never commit — datos de sesión local)
+*.db
+*.db-shm
+*.db-wal
+
+# Tool / personal dirs
+.claude/
+.ghproject/
+.kotlin/
+.notes/
+
