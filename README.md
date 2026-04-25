@@ -4,6 +4,8 @@
 ![Android](https://img.shields.io/badge/Platform-Android-green)
 ![Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-purple)
 
+![Planify banner](assets/banner.png)
+
 ## Overview
 
 Planify is a mobile application designed to help students organize their
